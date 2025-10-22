@@ -1,0 +1,7 @@
+Ship small, learn very fast
+Automate tests, reduce human error
+Refactor often, avoid technical debt
+Prioritize users, measure real impact
+Secure defaults protect user data
+Write docs, save future you
+Keep APIs simple and intuitive
