@@ -27,7 +27,7 @@ jobs:
       - name: Commit & push if changed (use your verified email)
         run: |
           git config user.name "Issan Panda"
-          git config user.email "YOUR_VERIFIED_EMAIL@users.noreply.github.com"
+          git config user.email "issanpanda@gmail.com"
           if git status --porcelain | grep README.md; then
             git add README.md
             git commit -m "chore: update quote of the day"
