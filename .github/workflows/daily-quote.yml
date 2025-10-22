@@ -1,0 +1,37 @@
+name: daily-quote
+on:
+  schedule:
+    - cron: '0 0 * * *'    # daily at 00:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-quote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run updater
+        run: python update_quote.py
+
+      - name: Commit & push if changed (use your verified email)
+        run: |
+          git config user.name "Issan Panda"
+          git config user.email "YOUR_VERIFIED_EMAIL@users.noreply.github.com"
+          if git status --porcelain | grep README.md; then
+            git add README.md
+            git commit -m "chore: update quote of the day"
+            git push origin HEAD:$(git rev-parse --abbrev-ref HEAD)
+          else
+            echo "No change to README.md"
+          fi
