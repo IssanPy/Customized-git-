@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/IssanPy/Customized-git-/blob/main/ISSAN%20PANDA%20(5).png" alt="Issan Panda Banner" />
+  <img src="https://github.com/IssanPy/Customized-git-/blob/main/Screenshot%202025-10-22%20192309.png" />
 </p>
 <h1 align="center">Hi 👋, I'm Issan Panda</h1>
 <h3 align="center">Full-Stack Developer | Cybersecurity Enthusiast | Tech Lead</h3>
