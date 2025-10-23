@@ -2,9 +2,9 @@
   <img src="https://github.com/IssanPy/Customized-git-/blob/main/Screenshot%202025-10-22%20192309.png" />
 </p>
 <!--QUOTE-BEGIN-->
-> Refactor often, avoid technical debt
+> Prioritize users, measure real impact
 
-*Updated: 2025-10-22 UTC*
+*Updated: 2025-10-23 UTC*
 <!--QUOTE-END-->
 
 <h1 align="center">Hi 👋, I'm Issan Panda</h1>
